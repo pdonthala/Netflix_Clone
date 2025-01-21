@@ -1,5 +1,8 @@
 #!/bin/bash
 echo "Hello"
+
+dos2unix /home/azureuser/myagent/_work/1/s/scripts/imageUpdater.sh
+
 REPO_URL="https://B9FeDCntv6BF8ipN6VWBDM5otB9L0QrHfTIb0Cr7Hf9nYuGIUhAZJQQJ99BAACAAAAAAAAAAAAASAZDOzfwN@dev.azure.com/azkdev992/K%20Dev/_git/K%20Dev"
 
 git clone "REPO_URL" /tmp/temp_repo
