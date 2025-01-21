@@ -19,3 +19,5 @@ spec:
         image: azdevreg.azurecr.io/kdev:6
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: acr-secret
