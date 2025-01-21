@@ -10,12 +10,7 @@ RUN yarn install
 COPY . .
 RUN yarn build
 
-
 FROM nginx:stable-alpine
-
-# Copy the build output from the previous stage
 COPY --from=build /app/dist /usr/share/nginx/html
-
 EXPOSE 80
-
 CMD ["nginx", "-g", "daemon off;"]
