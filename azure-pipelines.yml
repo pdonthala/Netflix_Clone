@@ -45,7 +45,7 @@ stages:
         containerRegistry: 'azdevreg'
         repository: '$(imageRepository)'
         command: 'push'
-- stage: Change Image Version
+- stage: changeImageVersion
   displayName: Image Version
   jobs:
   - job: Update
