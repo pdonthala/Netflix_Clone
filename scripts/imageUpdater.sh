@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Hello"
-REPO_URL="https://58UaIMznNKDqTrd7Oizcmj1j6UfJiLyNS4dovgg46sXs46vIa4EIJQQJ99BAACAAAAAAAAAAAAASAZDOe1Tq@dev.azure.com/azkdev992/K%20Dev/_git/K%20Dev"
+REPO_URL="https://B9FeDCntv6BF8ipN6VWBDM5otB9L0QrHfTIb0Cr7Hf9nYuGIUhAZJQQJ99BAACAAAAAAAAAAAAASAZDOzfwN@dev.azure.com/azkdev992/K%20Dev/_git/K%20Dev"
 
 git clone "REPO_URL" /tmp/temp_repo
 cd tmp/temp_repo
