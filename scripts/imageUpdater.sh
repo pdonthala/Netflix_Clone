@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+#set -x
 
 # Set the repository URL
 REPO_URL="https://58UaIMznNKDqTrd7Oizcmj1j6UfJiLyNS4dovgg46sXs46vIa4EIJQQJ99BAACAAAAAAAAAAAAASAZDOe1Tq@dev.azure.com/azkdev992/K%20Dev/_git/K%20Dev"
