@@ -25,7 +25,7 @@ spec:
             secretKeyRef:
               name: tmdb-api-key
               key: VITE_APP_TMDB_V3_API_KEY
-        - name: tmdb-api-key
+        - name: VITE_APP_API_ENDPOINT_URL
           value: "https://api.themoviedb.org/3"
       imagePullSecrets:
       - name: acr-secret
