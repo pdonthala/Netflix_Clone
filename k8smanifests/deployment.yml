@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: netflix-app
-        image: azdevreg.azurecr.io/kdev
+        image: azdevreg.azurecr.io/kdev:6
         ports:
         - containerPort: 80
