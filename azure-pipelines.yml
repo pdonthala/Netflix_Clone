@@ -53,5 +53,9 @@ stages:
     steps:
     - task: ShellScript@2
       inputs:
-        scriptPath: 'scripts/imageUpdater.sh'
-        args: '$(tag)'
+        scriptPath: '$(Build.SourcesDirectory)/scripts/imageUpdater.sh'
+        displayName: 'Fix line endings and run script'
+        failOnStderr: true
+        inlineScript: |
+          dos2unix $(Build.SourcesDirectory)/scripts/imageUpdater.sh
+          bash $(Build.SourcesDirectory)/scripts/imageUpdater.sh
