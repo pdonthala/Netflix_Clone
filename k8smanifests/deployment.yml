@@ -19,5 +19,10 @@ spec:
         image: azdevreg.azurecr.io/kdev:6
         ports:
         - containerPort: 80
+        env:
+        - name: VITE_APP_TMDB_V3_API_KEY
+          value: "5728e83a7aca33fd1330166c8c7b9dd2"
+        - name: VITE_APP_API_ENDPOINT_URL
+          value: "https://api.themoviedb.org/3"
       imagePullSecrets:
       - name: acr-secret
