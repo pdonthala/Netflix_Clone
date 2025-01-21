@@ -45,3 +45,13 @@ stages:
         containerRegistry: 'azdevreg'
         repository: '$(imageRepository)'
         command: 'push'
+- stage: Change Image Version
+  displayName: Image Version
+  jobs:
+  - job: Update
+    displayName: Update
+    steps:
+    - task: ShellScript@2
+      inputs:
+        scriptPath: 'scripts/updateK8sManifests.sh'
+        args: 'vote $(imageRepository) $(tag)'
